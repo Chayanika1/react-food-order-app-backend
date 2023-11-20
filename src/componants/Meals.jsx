@@ -6,7 +6,7 @@ const requestConfig = {}
 
 export default function Meals(){
    
-   const{data:loadedMeals,isLoading,error} =  useHttp('http://localhost:3000/meals',requestConfig,[])//{}= for config ,[]=for data
+   const{data:loadedMeals,isLoading,error} =  useHttp('https://react-food-order-app-backend.vercel.app/meals',requestConfig,[])//{}= for config ,[]=for data
    console.log(loadedMeals)
    if(isLoading){
     return <p className="center">Fetching meals...</p>
